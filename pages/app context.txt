@@ -1,0 +1,14 @@
+import '../styles/globals.css'
+import Provider from "../contextAPI/context";
+
+function MyApp({ session, Component, pageProps }) {
+  // console.log(pageProps.session);
+  return (
+    <Provider>
+          <Component {...pageProps} />
+    </Provider>
+  );
+}
+
+export default MyApp;
+
